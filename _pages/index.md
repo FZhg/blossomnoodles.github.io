@@ -10,16 +10,16 @@ narrow: true
 
 ### What else?
 
-John keeps himself busy on open-source and hobby projects. This is great for learning new skills. [The full list is here]({{ site.baseurl }}{% link list/projects.md %}). There's also a project page about how to [install and use this theme]({{ site.baseurl }}{% link _projects/install.md %}).
+Bryan keeps him busy learn Machine Learning, Computer Vision and algorithms. During his his study journey, he will inevitably have something to say. [His posts is here]({{ site.baseurl }}{% link list/posts.html %}). There's also a projects page about  [Machine Learning he has completed]({{ site.baseurl }}{% link list/projects.md %}).
 
-John has worked in engineering for many years and has an impressive portfolio. [Browse it here.]({{ site.baseurl }}{% link list/portfolio.html %})
+Bryan wants to share his GRE Anatical Wrting Essay, which he wrote for pratice [Browse it here.]({{ site.baseurl }}{% link list/portfolio.html %})
 
-John has posted a bunch of tips about how to use Friday Theme. There's the three most-recent posts below, or here's [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
+Bryan has posted ***tutorial to install Cuda9.0, Cudnn7.0 and Tensorflow on Ubuntu 18.04***.[This tutorial is here]({{ site.baseurl }}{% link _posts/2017-10-13-friday-theme-single-image.md %}) There's the three most-recent posts below, or here's [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
 
 <div class="card mb-3">
-    <img class="card-img-top" src="https://images.unsplash.com/photo-1516358045903-b686e6bd3814?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=beab09d3410d08c33d34a47af0a7b99d&auto=format&fit=crop&w=1652&q=80"/>
+    <img class="card-img-top" src="/theme/img/cat.jpg">
     <div class="card-body bg-light">
-        <div class="card-text">A picture from when John was on holiday in the Peak District.</div>
+        <div class="card-text"> A picture bryan took when he was playing with the school stray cat</div>
     </div>
 </div>
 

@@ -18,7 +18,7 @@ My families and friends are encouraging me all the time. My dad is a very funny 
 
 Right now, I am learning the open courses of Stanford CS299 by Andrew Ng and CS231n by Li Feifei. I am also studying the introductory algorithm class of MIT, the 6.006. Oh Boy! Just love the algorithm games! I figure it out that playing kaggle may  impress the CS professors enough to give me a offer. 
 
-In the end, Enjoy your life, whoever is reading!
+In the end, whoever is reading, have fun!
 
 
 <hr />
