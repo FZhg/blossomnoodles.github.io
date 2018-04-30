@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>
+        
+            Install Tensorflow on Ubuntu 18.04 &middot; Bryan Zhang
+        
+    </title>
+
+    <script src="/theme/js/jquery-3.2.1.min.js"></script>
+    <script src="/theme/js/popper.min.js"></script>
+    <script src="/theme/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/theme/css/bootstrap.css">
+    <link rel="stylesheet" href="/theme/css/site.css">
+    <link rel="stylesheet" href="/theme/css/syntax.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top justify-content-between">
+    <a class="navbar-brand font-weight-bold" href="/index.html">Bryan Zhang</a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ml-auto">
+        
+            <li class="nav-item">
+                <a href='/index.html'
+                   class="nav-link">
+                    Home
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/about.html'
+                   class="nav-link">
+                    About
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/list/posts.html'
+                   class="nav-link">
+                    Posts
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/list/projects.html'
+                   class="nav-link">
+                    Projects
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='/list/portfolio.html'
+                   class="nav-link">
+                    Analytical Writing Essays
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a href='https://blossomnoodles.github.io/cnBlogs/'
+                   class="nav-link">
+                    中文版
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+</nav>
+
+
+
+
+
+<div class="container site-container" id="top">
+    <div class="row">
+        <div class="d-none d-lg-block col-lg-4 col-xl-4 side">
+            
+
+
+
+
+
+
+
+
+    <div class="sticky-top space-before">
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>30 Apr 2018</h5>
+            </div>
+            <div class="d-flex flex-wrap align-items-center">
+                <span class="icon grey mr-2 mb-2">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z"/>
+</g>
+</svg>
+
+                </span>
+                
+                    <a href="/list/posts.html#cuda9-0"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Cuda9.0
+                    </a>
+                
+                    <a href="/list/posts.html#ubuntu-18-04"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Ubuntu 18.04
+                    </a>
+                
+                    <a href="/list/posts.html#tensorflow"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Tensorflow
+                    </a>
+                
+                    <a href="/list/posts.html#cudnn7-0"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Cudnn7.0
+                    </a>
+                
+                    <a href="/list/posts.html#pytorch"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        pytorch
+                    </a>
+                
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <span class="icon grey mr-1">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Arrow_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M2.5,10L9,3.5V7h8v6H9v3.5L2.5,10z"/>
+</svg>
+
+                </span>
+                <a href="/list/posts.html">Back to all posts</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+        </div>
+        <div class="col-md-12 col-lg-8 col-xl-8 pb-4 content">
+            <h1 class="border border-top-0 border-right-0 border-left-0 mb-3 pb-2">Install Tensorflow on Ubuntu 18.04</h1>
+
+<div class="d-md-block d-lg-none">
+    <div class="sticky-top space-before">
+    <div class="card bg-light mb-3">
+        <div class="card-body">
+            <div class="card-title">
+                <h5>30 Apr 2018</h5>
+            </div>
+            <div class="d-flex flex-wrap align-items-center">
+                <span class="icon grey mr-2 mb-2">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Price_tag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<g>
+	<path d="M19.388,0.405c-0.111-0.314-0.454-0.48-0.769-0.371c-0.315,0.109-0.481,0.455-0.372,0.77
+		c0.929,2.67-0.915,4.664-2.321,5.732l-0.568-0.814c-0.191-0.273-0.618-0.5-0.95-0.504L11.22,5.232
+		c-0.332-0.006-0.825,0.146-1.097,0.338l-9.394,6.587c-0.455,0.32-0.565,0.947-0.247,1.404l4.269,6.108
+		c0.32,0.455,0.831,0.4,1.287,0.082l9.394-6.588c0.27-0.191,0.582-0.603,0.692-0.918l0.998-3.145
+		c0.11-0.314,0.043-0.793-0.148-1.066l-0.346-0.496C18.516,6.091,20.476,3.534,19.388,0.405z M15.017,9.763
+		c-0.727,0.51-1.731,0.332-2.24-0.396c-0.511-0.73-0.333-1.734,0.395-2.246C13.75,6.716,14.5,6.745,15.04,7.138
+		c-0.272,0.164-0.459,0.26-0.494,0.275c-0.301,0.143-0.43,0.504-0.288,0.805c0.104,0.219,0.321,0.348,0.547,0.348
+		c0.086,0,0.174-0.02,0.257-0.059c0.194-0.092,0.402-0.201,0.619-0.33C15.778,8.771,15.542,9.394,15.017,9.763z"/>
+</g>
+</svg>
+
+                </span>
+                
+                    <a href="/list/posts.html#cuda9-0"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Cuda9.0
+                    </a>
+                
+                    <a href="/list/posts.html#ubuntu-18-04"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Ubuntu 18.04
+                    </a>
+                
+                    <a href="/list/posts.html#tensorflow"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Tensorflow
+                    </a>
+                
+                    <a href="/list/posts.html#cudnn7-0"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        Cudnn7.0
+                    </a>
+                
+                    <a href="/list/posts.html#pytorch"
+                       class="bg-white border rounded p-1 mr-2 mb-2 d-inline-block">
+                        pytorch
+                    </a>
+                
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <span class="icon grey mr-1">
+                    <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+
+<svg version="1.1" id="Arrow_left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+<path d="M2.5,10L9,3.5V7h8v6H9v3.5L2.5,10z"/>
+</svg>
+
+                </span>
+                <a href="/list/posts.html">Back to all posts</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<p>We will go through several stages, like installing cuda-9.0, cudnn and tensorflow cpu and tensorflow gpu versions. Finally we will install pytorch with cuda-9.0. Qouting Black Widow in MARVEl movie, “I am fighting this war so you don’t have to”.</p>
+
+<!--more-->
+
+<p>Last night, April 29th, 2018, I successfully installed Tensorflow on Ubuntu 18.04. However, the key to install Tensorflow is to correctly install Cuda and Cudnn libray, since last night Tensorflow complied run file only support cuda-9.0. So please if this blog is out of date.</p>
+
+<p>Before we install Cuda-9.0, you may want to change ubuntu mirror source website to whichever is closet to you. I changed it into the mirro.ustc.edu.cn
+since I am in Hefei, Anhui, China. Just seach software&amp;update in Show Application Page, since the system setting doesn’t include this item like 16.04.
+Then please change the GPU diver to be 390 version tested by Nvidia.</p>
+
+<hr />
+
+<h2 id="install-cuda-90">Install Cuda-9.0</h2>
+<p>checking<a href="https://www.tensorflow.org/install/install_linux">Tensorflow website</a>, we know that we have to install cuda9.0 first as dependency for the Tensorflow advantage. Fisrt google cuda-9.0,. and choose linux, then ubuntu-16.04 and finally download the <a href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1604&amp;target_type=runfilelocal">runfile</a>, which is 1.6GB but can be downloaded very fast.</p>
+
+<p>Before we get into the runfile, we need to install some dependencies, otherwise you will get “Missing recommended libary” warnings like this.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/libray_warnings_1.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The Libray Warnings </div>
+    </div>
+</div>
+<p>Install the dependencies like <a href="https://blog.csdn.net/10km/article/details/61915535">this</a></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get <span class="nb">install </span>freeglut3-dev build-essential libx11-dev libxmu-dev libxi-dev libgl1-mesa-glx libglu1-mesa libglu1-mesa-dev </code></pre></figure>
+
+<p>Next, let’s we install cuda-9.0 like <a href="https://stackoverflow.com/questions/25165828/cuda-toolkit-6-0-unsupported-compiler-ubuntu-14-04">this</a></p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo chmod </span>777 <span class="k">*</span>.runfile    <span class="c"># give permission to run all the runfile files</span>
+<span class="nb">sudo</span> ./cuda_9.0.176_384.81_linux.run <span class="nt">-toolkit</span> <span class="nt">-samples</span> <span class="nt">-silent</span> <span class="nt">-override</span> <span class="c">#</span></code></pre></figure>
+
+<p>Then cuda-9.0 is installed on the this path /usr/local/cuda-9.0. To avoid missing libray error, we create a symbolic link “cuda” in this directory for cuda-9.0</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd</span> /usr/local
+<span class="nb">sudo ln</span> <span class="nt">-s</span> /usr/local/cuda-9.0 cuda     <span class="c"># create the symbolic link</span></code></pre></figure>
+
+<p>Before the verify our installation of cuda-9.0, we will lower our gcc version Otherwise we will get “gcc later than 6 is not supported error” like this.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/gcc_error_1.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The GCC errors </div>
+    </div>
+</div>
+
+<p>Checking <a href="https://askubuntu.com/questions/26498/choose-gcc-and-g-version/26518#26518">this</a> and the gcc version on Ubuntun 18.04, we decide to lower our gcc version.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">gcc <span class="nt">--version</span>   <span class="c"># check ubuntu 18.04 gcc version, you will find it's 7.3.0</span>
+<span class="nb">sudo </span>apt <span class="nb">install </span>gcc-5 g++-5
+<span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/gcc gcc /usr/bin/gcc-5 50   <span class="c"># you will find that message that tells you the gcc-5 is set to be automatic.</span>
+<span class="nb">sudo </span>update-alternatives <span class="nt">--install</span> /usr/bin/g++ g++ /usr/bin/g++-5 50   <span class="c"># similiar message as gcc</span></code></pre></figure>
+
+<h3 id="set-the-cuda-into-enviroment-variables">set the cuda into enviroment variables</h3>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"> <span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span>/usr/local/cuda-9.1/bin<span class="k">${</span><span class="nv">PATH</span>:+:<span class="k">${</span><span class="nv">PATH</span><span class="k">}}</span>
+ <span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span>/usr/local/cuda-9.1/lib64<span class="se">\</span>
+                         <span class="k">${</span><span class="nv">LD_LIBRARY_PATH</span>:+:<span class="k">${</span><span class="nv">LD_LIBRARY_PATH</span><span class="k">}</span></code></pre></figure>
+
+<h3 id="verify-the-cuda-90-installation">Verify the cuda-9.0 Installation</h3>
+<p>In the same time, we can check that in our home directory, the cuda sample files appears. Let’s build some samples.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cd </span>NVIDIA_CUDA-9.0_Samples/5_Simulations/fluidsGL
+make clean <span class="o">&amp;&amp;</span> make
+./fluidsGL </code></pre></figure>
+
+<p>If cuda-9.0 is installed correctly, there should be no error message during our make process. And then we can a gogeous fluid stimulation like this.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/fluid_stimulation_1.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The fluid stimulation sample </div>
+    </div>
+</div>
+
+<p>So far so good! Our cuda-9.0 is successfully installed! We can have some fun to make some other sample codes before we move on!</p>
+
+<hr />
+
+<h2 id="install-cudnn70">Install cuDNN7.0</h2>
+<p>Ok! We have had a good time to try out the cuda sample code. Let’s install the cuDNN library to accelerate our deep learning algorithms.
+Fisrt register into cudnn website, if you haven’t yet. Agree the term and click the <a href="https://developer.nvidia.com/rdp/cudnn-archive">“Archived cuDNN Releases”</a>. Click “Download cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0” and download three files, the runtime library. developer library, and code samples and user guide, all for Ubuntu 16.04. Go the download directory. By referring <a href="http://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/Doc/cuDNN-Installation-Guide.pdf?510yyrBo9bqx3F6AcnwHaygrC4lBKo50QzFu-ffoA8eaZp0xSW6e6uk2L3oHzEEVaPHm71Wv-UBiNlV7lrwwx7AtsPW_nw1cZs5fUkEn4FNHdGdRIeZfNSwwc0qBfJM-XzwvV9bIaof0KU9KVDGDjyHU8fVAiDuRk2emANigfuynlgbju6MYyPV9DzEjHtqs_g">the cuDNN installation guide</a>, we can confidently install cuDNN like this.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>dpkg <span class="nt">-i</span> libcudnn7_7.0.5.11-1+cuda9.0_amd64.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> libcudnn7-dev_7.0.5.11-1+cuda9.0_amd64.deb
+<span class="nb">sudo </span>dpkg <span class="nt">-i</span> libcudnn7-doc_7.0.5.11-1+cuda9.0_amd64.deb</code></pre></figure>
+
+<h3 id="install-freeimage">Install Freeimage</h3>
+<p>Before we verify cuDNN, we must install the freeimage lilbray first as dependencies for  ministCUDNN sample code. Otherwise we will get error ask us to set Freeimage correctly.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get <span class="nb">install </span>libfreeimage3 libfreeimage-dev</code></pre></figure>
+
+<h3 id="verify-cudnn-installations">Verify cuDNN Installations</h3>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">cp</span> <span class="nt">-r</span> /usr/src/cudnn_samples_v7/ <span class="nv">$HOME</span>
+<span class="nb">cd</span> <span class="nv">$HOME</span>/cudnn_samples_v7/mnistCUDNN
+make clean <span class="o">&amp;&amp;</span> make
+./mnistCUDNN</code></pre></figure>
+
+<p>If everything works, we can get our result —- “test passed!””</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/minist_test_1.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The ministCUDNN sample codes </div>
+    </div>
+</div>
+
+<p>We can try other samples althougy they may not be impressive as samples before.</p>
+
+<hr />
+
+<h2 id="install-tensorlfow">Install Tensorlfow</h2>
+<p>We will use the recommeded installations, which is by <a href="https://www.tensorflow.org/install/install_linux">virualenv</a>.
+First install libcupti-dev library.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get <span class="nb">install </span>libcupti-dev
+<span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$LD_LIBRARY_PATH</span>:/usr/local/cuda/extras/CUPTI/lib64</code></pre></figure>
+
+<p>Then we will install virtualenv and create a Tensorflow Enviroment.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>apt-get <span class="nb">install </span>python3-pip python3-dev python-virtualenv
+virtualenv <span class="nt">--system-site-packages</span> <span class="nt">-p</span> python3 tensorflow <span class="c"># create a enviroment named tensorflow</span></code></pre></figure>
+
+<p>This will take sometime please be patient.</p>
+<h3 id="install-tensorflow-cpu-version">Install Tensorflow CPU version</h3>
+<p>When the enviroment is created, we must activate it every time we want to use tensorflow. Let’s first install tensorflow cpu version fisrt as recommended.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">source</span> ~/tensorflow/bin/activate
+pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> tensorflow  <span class="c"># install the cpu version</span></code></pre></figure>
+
+<h3 id="verify-tensorflow-cpu-version">Verify Tensorflow CPU version</h3>
+<p>In the same tensorflow enviroment, which means you will see this in your shell.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="o">(</span>tensorflow<span class="o">)</span><span class="nv">$ </span></code></pre></figure>
+
+<p>type python and the following python code.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">python</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Python</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s">'Hello, TensorFlow!'</span><span class="p">)</span>
+<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">))</span></code></pre></figure>
+
+<p>This is my result. Although it differs with the official verificaiton result, but it works.</p>
+<pre>&gt;&gt;&gt; print(sess.run(hello))
+b&apos;Hello, TensorFlow!&apos;
+&gt;&gt;&gt; </pre>
+
+<h3 id="install-tensorflow-gpu-version">Install Tensorflow GPU Version</h3>
+<p>First make sure we are in the same tensorflow Enviroment.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">pip3 <span class="nb">install</span> <span class="nt">--upgrade</span> tensorflow-gpu</code></pre></figure>
+
+<p>However, I am in China. The internet speed speed for downloading the whl file is slow. So I have to use my own download the whl file in browser and pip3 install locally.</p>
+
+<h3 id="verify-tensorflow-gpu-version">Verify Tensorflow GPU version</h3>
+<p>Still make sure you are in the Tensorflow Enviroment.</p>
+
+<p>type python and the following python code.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">python</code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-python" data-lang="python"><span class="c"># Python</span>
+<span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
+<span class="n">hello</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">constant</span><span class="p">(</span><span class="s">'Hello, TensorFlow!'</span><span class="p">)</span>
+<span class="n">sess</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+<span class="k">print</span><span class="p">(</span><span class="n">sess</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">hello</span><span class="p">))</span></code></pre></figure>
+
+<p>The result is the same. But we can see our GPU device is working. In my case, you can see GTX 1050 Ti in the test result below.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/tensorflow_gpu_test-1.png" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The Tensorflow GPU verificaiton  </div>
+    </div>
+</div>
+
+<p>So we have successfully install Tensorflow on Ubuntu 18.04.
+You can test more and more fun with <a href="https://www.tensorflow.org/get_started/premade_estimators">“Get Started”</a> page on the Tensorflow website. However, I am in China. The Internet speed to git clone the Model repository is hugely slow. So still, I have to use my own way to download the tensorflow Model repository in the browser.</p>
+
+<p>This my fisrt example.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/tensorflow_flower_classification.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> The Tensorflow flower classificaiton example </div>
+    </div>
+</div>
+
+<hr />
+
+<h2 id="install-pytorch">Install Pytorch</h2>
+<p>We will use Anaconda, the package manager recommended by pytorch to install it.</p>
+
+<h3 id="install-anaconda">Install Anaconda</h3>
+<p>I am in Hefei, China. So I choose mirror.ustc.edu.cn to download the .sh file for anaconda installation.
+After we have install the Anaconda. We have to change onwer of the “Anaconda3” to be us otherwise we cannot write file into this directory.
+Fisrt we check our user name and user group.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">groups</span></code></pre></figure>
+
+<p>the first group are usually your group right now.
+Here is my result.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/user_group_1.png" />
+    <div class="card-body bg-light">
+        <div class="card-text"> My user group </div>
+    </div>
+</div>
+<p>Since my usergroup is bryan and my username is also bryan. So I will make below command as “chown -R bryan:brayn anaconda3”
+“-R” means recusively, this parameter will change the entire anacodna3 diretory’s owner.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">chown</span> <span class="nt">-R</span> YOUR_GROUp:YOUR_USER_name anaconda3</code></pre></figure>
+
+<h3 id="change-anaconda-channels">Change Anaconda Channels</h3>
+<p>Before we install pytorch we can set the Anaconda mirror source for fewer waiting time. Again, my mirror source is mirror.ustc.edu.cn.
+Please look for your own ones.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">conda config <span class="nt">--add</span> channels https://mirrors.ustc.edu.cn/anaconda/pkgs/free/
+conda config <span class="nt">--add</span> channels https://mirrors.ustc.edu.cn/anaconda/pkgs/main/
+conda config <span class="nt">--set</span> show_channel_urls <span class="nb">yes</span></code></pre></figure>
+
+<p>You can replace the website link as any mirror source that suits you.</p>
+
+<h3 id="install-pytorch-1">Install Pytorch</h3>
+<p>Then we can go to the <a href="http://pytorch.org/">pytorch</a> website. Choose linux, python version to be 3.6 and cuda version to be 9.0. Please Hold this command we have</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">conda <span class="nb">install </span>pytorch torchvision cuda91 <span class="nt">-c</span> pytorch</code></pre></figure>
+
+<p>The last pytorch means that we will download the pytorch form its official website, which is hugely slow for me. So replace the last pytorch as the mirror source that suits you and have the pytorch package in the cloud.
+In my case, the command becomes this.</p>
+
+<figure class="highlight"><pre><code class="language-shell" data-lang="shell">conda <span class="nb">install </span>pytorch torchvision cuda91 <span class="nt">-c</span> https://mirrors.ustc.edu.cn/anaconda/cloud/pytorch/</code></pre></figure>
+
+<h3 id="verify-pytorch">Verify Pytorch</h3>
+<p>You can try the <a href="http://pytorch.org/tutorials/">“Get Started”</a> examples on pytoch webstie. Here is my result.</p>
+<div class="card mb-3">
+    <img class="card-img-top" src="/theme/img/pytorch_test_1.jpg" />
+    <div class="card-body bg-light">
+        <div class="card-text"> My user group </div>
+    </div>
+</div>
+
+<hr />
+
+<p>Finally, We have done it! We have made it! Congratulations to us! If this tutorial has any problems for you, please email to <a href="mailto:zhangfanordomozhang@gmail.com">me</a></p>
+
+
+
+        </div>
+        <div class="col-md-12 d-lg-none bottom">
+            
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2017 The Bootstrap Authors
+ * Copyright 2014-2017 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+// See the Getting Started docs for more information:
+// https://getbootstrap.com/getting-started/#support-ie10-width
+
+(function () {
+    'use strict'
+
+    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+        var msViewportStyle = document.createElement('style')
+        msViewportStyle.appendChild(
+            document.createTextNode(
+                '@-ms-viewport{width:auto!important}'
+            )
+        )
+        document.head.appendChild(msViewportStyle)
+    }
+}())
+</script>
+
+</body>
+
+</html>
