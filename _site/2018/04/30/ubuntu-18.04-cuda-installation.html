@@ -249,22 +249,22 @@
 
 </div>
 
-<p>We will go through several stages, like installing cuda-9.0, cudnn and tensorflow cpu and tensorflow gpu versions. Finally we will install pytorch with cuda-9.0. Qouting Black Widow in MARVEl movie, “I am fighting this war so you don’t have to”.</p>
+<p>We will go through several stages, like installing cuda-9.0, cudnn and tensorflow cpu and tensorflow GPU versions. Finally, we will install pytorch with cuda-9.0. Quoting Black Widow in Marvel movie, “I am fighting this war so you don’t have to”.</p>
 
 <!--more-->
 
-<p>Last night, April 29th, 2018, I successfully installed Tensorflow on Ubuntu 18.04. However, the key to install Tensorflow is to correctly install Cuda and Cudnn libray, since last night Tensorflow complied run file only support cuda-9.0. So please if this blog is out of date.</p>
+<p>Last night, April 29th, 2018, I successfully installed Tensorflow on Ubuntu 18.04. However, the key to install Tensorflow is to correctly install Cuda and cuDNN library, since last night Tensorflow complied run file only support cuda-9.0. So please if this blog is out of date.</p>
 
 <p>Before we install Cuda-9.0, you may want to change ubuntu mirror source website to whichever is closet to you. I changed it into the mirro.ustc.edu.cn
-since I am in Hefei, Anhui, China. Just seach software&amp;update in Show Application Page, since the system setting doesn’t include this item like 16.04.
+since I am in Hefei, Anhui, China. Just search software&amp;update in Show Application Page, since the system setting doesn’t include this item like 16.04.
 Then please change the GPU diver to be 390 version tested by Nvidia.</p>
 
 <hr />
 
 <h2 id="install-cuda-90">Install Cuda-9.0</h2>
-<p>checking<a href="https://www.tensorflow.org/install/install_linux">Tensorflow website</a>, we know that we have to install cuda9.0 first as dependency for the Tensorflow advantage. Fisrt google cuda-9.0,. and choose linux, then ubuntu-16.04 and finally download the <a href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1604&amp;target_type=runfilelocal">runfile</a>, which is 1.6GB but can be downloaded very fast.</p>
+<p>checking<a href="https://www.tensorflow.org/install/install_linux">Tensorflow website</a>, we know that we have to install cuda9.0 first as dependency for the Tensorflow advantage. First google cuda-9.0,. and choose linux, then Ubuntu-16.04 and finally download the <a href="https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&amp;target_arch=x86_64&amp;target_distro=Ubuntu&amp;target_version=1604&amp;target_type=runfilelocal">runfile</a>, which is 1.6GB but can be downloaded very fast.</p>
 
-<p>Before we get into the runfile, we need to install some dependencies, otherwise you will get “Missing recommended libary” warnings like this.</p>
+<p>Before we get into the runfile, we need to install some dependencies, otherwise, you will get “Missing recommended library” warnings like this.</p>
 <div class="card mb-3">
     <img class="card-img-top" src="/theme/img/libray_warnings_1.jpg" />
     <div class="card-body bg-light">
@@ -313,7 +313,7 @@ Then please change the GPU diver to be 390 version tested by Nvidia.</p>
 make clean <span class="o">&amp;&amp;</span> make
 ./fluidsGL </code></pre></figure>
 
-<p>If cuda-9.0 is installed correctly, there should be no error message during our make process. And then we can a gogeous fluid stimulation like this.</p>
+<p>If Cuda-9.0 is installed correctly, there should be no error message during our making process. And then we can a gorgeous fluid stimulation like this.</p>
 <div class="card mb-3">
     <img class="card-img-top" src="/theme/img/fluid_stimulation_1.jpg" />
     <div class="card-body bg-light">
@@ -327,7 +327,7 @@ make clean <span class="o">&amp;&amp;</span> make
 
 <h2 id="install-cudnn70">Install cuDNN7.0</h2>
 <p>Ok! We have had a good time to try out the cuda sample code. Let’s install the cuDNN library to accelerate our deep learning algorithms.
-Fisrt register into cudnn website, if you haven’t yet. Agree the term and click the <a href="https://developer.nvidia.com/rdp/cudnn-archive">“Archived cuDNN Releases”</a>. Click “Download cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0” and download three files, the runtime library. developer library, and code samples and user guide, all for Ubuntu 16.04. Go the download directory. By referring <a href="http://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/Doc/cuDNN-Installation-Guide.pdf?510yyrBo9bqx3F6AcnwHaygrC4lBKo50QzFu-ffoA8eaZp0xSW6e6uk2L3oHzEEVaPHm71Wv-UBiNlV7lrwwx7AtsPW_nw1cZs5fUkEn4FNHdGdRIeZfNSwwc0qBfJM-XzwvV9bIaof0KU9KVDGDjyHU8fVAiDuRk2emANigfuynlgbju6MYyPV9DzEjHtqs_g">the cuDNN installation guide</a>, we can confidently install cuDNN like this.</p>
+First register into cuDNN website, if you haven’t yet. Agree on the term and click the <a href="https://developer.nvidia.com/rdp/cudnn-archive">“Archived cuDNN Releases”</a>. Click “Download cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0” and download three files, the runtime library. developer library, and code samples and user guide, all for Ubuntu 16.04. Go the download directory. By referring <a href="http://developer.download.nvidia.com/compute/machine-learning/cudnn/secure/v7.0.5/prod/Doc/cuDNN-Installation-Guide.pdf?510yyrBo9bqx3F6AcnwHaygrC4lBKo50QzFu-ffoA8eaZp0xSW6e6uk2L3oHzEEVaPHm71Wv-UBiNlV7lrwwx7AtsPW_nw1cZs5fUkEn4FNHdGdRIeZfNSwwc0qBfJM-XzwvV9bIaof0KU9KVDGDjyHU8fVAiDuRk2emANigfuynlgbju6MYyPV9DzEjHtqs_g">the cuDNN installation guide</a>, we can confidently install cuDNN like this.</p>
 
 <figure class="highlight"><pre><code class="language-shell" data-lang="shell"><span class="nb">sudo </span>dpkg <span class="nt">-i</span> libcudnn7_7.0.5.11-1+cuda9.0_amd64.deb
 <span class="nb">sudo </span>dpkg <span class="nt">-i</span> libcudnn7-dev_7.0.5.11-1+cuda9.0_amd64.deb
