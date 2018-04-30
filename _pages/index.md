@@ -10,9 +10,9 @@ narrow: true
 
 ### What else?
 
-Bryan keeps him busy learn Machine Learning, Computer Vision and algorithms. During his his study journey, he will inevitably have something to say. [His posts is here]({{ site.baseurl }}{% link list/posts.html %}). There's also a projects page about  [Machine Learning he has completed]({{ site.baseurl }}{% link list/projects.md %}).
+Bryan keeps him busy learn Machine Learning, Computer Vision, and algorithms. During his study journey, he will inevitably have something to say. [His posts is here]({{ site.baseurl }}{% link list/posts.html %}). There's also a projects page about  [Machine Learning he has completed]({{ site.baseurl }}{% link list/projects.md %}).
 
-Bryan wants to share his GRE Anatical Wrting Essay, which he wrote for pratice [Browse it here.]({{ site.baseurl }}{% link list/portfolio.html %})
+Bryan wants to share his GRE Analytical Writing Essay, which he wrote for practice [Browse it here.]({{ site.baseurl }}{% link list/portfolio.html %})
 
 Bryan has posted ***tutorial to install Cuda9.0, Cudnn7.0 and Tensorflow on Ubuntu 18.04***.[This tutorial is here]({{ site.baseurl }}{% link _posts/2017-10-13-friday-theme-single-image.md %}) There's the three most-recent posts below, or here's [all posts by year.]({{ site.baseurl }}{% link list/posts.html %})
 
