@@ -1,3 +1,5 @@
-This is the homepage of an imaginary person called John Smith who lives in London, UK. It exists as a demo of the Friday Theme, which is a portfolio and blog theme for Jekyll.
+This is the homepage of a funny guy named Bryan Zhang. Bryan is  a junior Physcis student in Hefei Unviersity of Technology. He wants to keep stories about his life and his lovable friends' on this blog. 
 
-Let's imagine John Smith is a freelance software engineer. He blogs occasionally, maintains some project pages for things he has on GitHub, and has a portfolio of work that he maintains instead of a CV. Friday Theme has layouts and collections for exactly that. This web site is a demo of it in action.
+He is trying to change his field into Machine Learning, more boadly Artifial Intelligence, which fascinates him like no other things can(of course, except a good date, great food, a terrific hangout!). He will write whatever worth a history on his blog. 
+
+He is very glad to hear your Comments. Please email them to [here](mailto:zhangfanordomozhang@gmail.com).

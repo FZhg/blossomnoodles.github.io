@@ -1,20 +1,24 @@
-- caption: Friday Theme on GitHub
-  href: https://github.com/sfreytag/friday-theme
+- caption: GitHub
+  href: https://github.com/blossomnoodles
   icon: entypo/github.svg
 
 - caption: Stack Overflow
-  href: https://stackoverflow.com
+  href: https://stackoverflow.com/users/6453040/user6453040
   icon: icons/stackoverflow.svg
 
 - caption: Facebook
-  href: https://www.facebook.com
+  href: https://www.facebook.com/zhangfanordomozhang
   icon: entypo/facebook.svg
 
 - caption: Twitter
-  href: https://www.twitter.com
+  href: https://twitter.com/WsUvRhPaCU5V5vF
   icon: entypo/twitter.svg
 
-- caption: London
-  href: https://www.google.co.uk/maps/place/London/@51.528308,-0.3817765,10z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x52963a5addd52a99!8m2!3d51.5073509!4d-0.1277583
+- caption: Zhihu
+  href: https://www.zhihu.com/people/zhang-fan-29-94/activities
+  icon: entypo/zhihu.svg
+
+- caption: Hefei
+  href: https://www.google.com/maps/place/Hefei,+Anhui,+China/@31.8554479,117.146179,11z/data=!3m1!4b1!4m5!3m4!1s0x35cb640ef207cf9d:0xdc151173f2c33299!8m2!3d31.820591!4d117.227219
   icon: entypo/location-pin.svg
 
